@@ -45,7 +45,7 @@
       grid-column-gap: 1em;
 
       @if $sidebar-alignment == "left" {
-        grid-template-columns: 2fr 505px 3.5fr; // 12 column grid
+        grid-template-columns: 2fr 615px 3.5fr; // 12 column grid
         grid-template-areas:
           "alerts alerts alerts"
           "pins pins pins"

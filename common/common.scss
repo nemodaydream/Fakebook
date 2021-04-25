@@ -1157,3 +1157,25 @@ section.tag-info {
 .embedded-posts.top .row .topic-body {
   border: none;
 }
+
+
+
+@mixin withImage ($col, $image) {
+    &.bullet {
+        background-image: url($image);
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        opacity: 0.4;
+        padding: 1px 0 1px 18px;
+    }
+    &:link, &:visited {
+        color: $col;
+    }
+    &.bullet::before {
+        display: none;
+    }
+}
+
+[data-tag-name="trump"] {
+    @include withImage(#823755, 'https://se23.life/uploads/default/original/2X/b/b784a22693d213ec5936051da30756c3765b06a1.png');
+}

@@ -10,6 +10,6 @@ $header-border: rgba(var(--primary-rgb, $primary), 0.25);
 
 .select-kit.single-select.is-expanded .select-kit-header:not(.btn), .select-kit.single-select .select-kit-header:not(.btn):focus, .select-kit.single-select .select-kit-header:not(.btn):active {
     border-color: var(--tertiary);
-    /* outline: 1px solid var(--tertiary); */
-    /* outline-offset: 0; */
+     outline: none;
+   outline-offset: 0; 
 }
